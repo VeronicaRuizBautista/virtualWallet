@@ -4,12 +4,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
+    color: var(--color-blanco);
 }
 body{
-    background: var(--color-blanco);
+    background: var(--color-gris);
+}
+.banner {
+    position: absolute;
 }
 .banner img{
-    position: absolute;
+    width: 100%;
 }
 .header{
     width: 100%;
@@ -30,13 +34,12 @@ body{
     width: 3em;
 }
 .logo__titulo{
-    color: var(--color-ternario);
+    color: var(--color-blanco);
     font-family: "SF-Pro-Text-Bold";
     text-transform: uppercase;
 }
-.header__menu i{
-    font-size: 3em;
-    color: var(--color-ternario);
+.header__menu {
+    width: 3em;
 }
 .titulo__card{
     display: flex;
@@ -48,7 +51,7 @@ body{
 .titulo__card h2,
 .titulo__card p{
     font-size: 2.3em;
-    color: var(--color-ternario);
+    color: var(--color-blanco);
     text-transform: capitalize;
 }
 .titulo__card h2{
