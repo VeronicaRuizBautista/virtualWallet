@@ -132,17 +132,15 @@ progress[value]::-moz-progress-bar {
 }
 
 .buttons__icons{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     height: 150px;
 }
 
 .buttons__icons img{
     background: var(--color-blanco);
     border-radius: 20px;
-    width: 30%;
-    padding: 0 20px 0 20px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    width: 35%;
 }
 
 .activities__transactions{
