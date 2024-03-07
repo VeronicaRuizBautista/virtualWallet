@@ -4,13 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
-    color: var(--color-blanco);
 }
 body{
     background: var(--color-gris);
 }
 .banner {
     position: absolute;
+    z-index: -100;
 }
 .banner img{
     width: 100%;
@@ -67,6 +67,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0 0.5em;
+    color: var(--color-blanco);
 }
 .balance__one,
 .balance__two{
@@ -74,12 +75,120 @@ body{
     flex-direction: column;
 }
 
-.footer{
+.balance__one small,
+.balance__two small {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: "SF-Pro-Text-Medium";
+}
+
+.balance__one label,
+.balance__two label {
+    font-size: 1.3em;
+    font-family: "SF-Pro-Text-Bold";
+}
+
+
+.balance__one progress::-webkit-progress-value {
+    background-color: var(--color-aqua);
+}
+.balance__one progress::-webkit-progress-bar{
+    background-color: var(--color-blanco);
+}
+
+.balance__two progress::-webkit-progress-bar {
+    background-color: var(--color-blanco);
+}
+.balance__two progress::-webkit-progress-value {
+    background-color: var(--gris-claro);
+}
+
+progress {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    height: .5em;
+    border-radius: 10em;
+}
+progress[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: var(--color);
+}
+.main__activities{
+    background-color: var(--color-blanco);
+    padding: 1em;
+    border-radius: 30px;
+    padding-bottom: 3.5em;
+    color: var(--color-gris);
+}
+
+.activities__buttons{
     display: flex;
+    flex-direction: column;
     width: 100%;
+    padding-top: 30px;
+}
+
+.buttons__icons{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.buttons__icons img{
+    background: var(--color-blanco);
+    border-radius: 20px;
+    width: 30%;
+    padding: 0 20px 0 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.activities__transactions{
+    padding-top: 30px;
+}
+
+.activities__transactions img{
+    width: 40px;
+}
+
+
+.activities__transactions p{
+    font-size: .5em;
+    color: var(--color-beige);
+}
+
+.activities__transactions li{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.transactions__box1 , .transactions__box2{
+    display: flex;
+}
+
+.transactions__box2{
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footer {
+    width: 100%;
+    background: var(--color-gris);
     position: fixed;
     bottom: 0;
 }
-.footer img {
-    width: 100%;
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul li {
+    list-style: none;
+    margin: .5em 0;
+}
+
+.footer ul li a img {
+    width: 2em;
 }
