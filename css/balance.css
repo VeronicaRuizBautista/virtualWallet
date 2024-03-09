@@ -1,0 +1,150 @@
+@import url(variable.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF-Pro-Text-Regular";
+}
+body{
+    position: relative;
+}
+.fondo__puntos {
+    position: fixed;
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    z-index: -10;
+}
+.fondo__puntos img {
+    object-fit: cover;
+    width: 100%;
+    margin-top: -70vw;
+}
+.header{
+    object-fit: cover;
+    width: 100%;
+    padding: 0 .5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.logo__icono img{
+    width: 3em;
+}
+.logo__titulo{
+    color: var(--color-blanco);
+    font-family: "SF-Pro-Text-Bold";
+    text-transform: uppercase;
+}
+.header__menu {
+    width: 3em;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.8fr .3fr 1.5fr 1fr;
+    grid-template-areas:
+    "circulo"
+    "ilera1"
+    "grafica"
+    "ilera2"
+    ;
+}
+.circulo{
+    grid-area: circulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 50%;
+    height: 50%;
+    background-color: var(--color-aqua);
+    border-radius: 100%;
+    color: var(--color-blanco);
+}
+span {
+    font-size: .6em;
+}
+.ilera1 {
+    width: 100%;
+    grid-area: ilera1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.item1 {
+    color: var(--color-blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vw;
+    width: 20vw;
+    height: 4vh;
+    background-color: var(--color-gris);
+}
+.item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vw;
+    color: var(--color-aqua);
+    width: 20vw;
+    height: 4vh;
+    outline: .5px solid var(--color-aqua);
+}
+.item3 {
+    color: var(--color-beige);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vw;
+    width: 20vw;
+    height: 4vh;
+    outline: .5px solid var(--color-beige);
+}
+.img {
+    outline: red;
+    grid-area: grafica;
+}
+.ilera2 {
+    background-color: darkgray;
+    grid-area: ilera2;
+}
+.footer {
+    width: 100%;
+    background: var(--color-gris);
+    position: fixed;
+    bottom: 0;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul li {
+    list-style: none;
+    margin: .5em 0;
+}
+
+.footer ul li a img {
+    width: 2em;
+}
