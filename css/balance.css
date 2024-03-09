@@ -52,7 +52,8 @@ body{
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1.8fr .3fr 1.5fr 1fr;
+    grid-template-rows: 1.8fr .3
+    fr 1.5fr 1fr;
     grid-template-areas:
     "circulo"
     "ilera1"
