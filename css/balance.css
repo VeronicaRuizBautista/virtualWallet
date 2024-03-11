@@ -128,6 +128,27 @@ span {
 .ilera2 {
     background-color: darkgray;
     grid-area: ilera2;
+    display: flex;
+    background-color: var(--color-beige);
+    justify-content: space-between;
+    padding: 20px;
+}
+.texto {
+    width: 40%;
+}
+.ilera2 img {
+    width: 60%;
+}
+.ilera2 i {
+    background-color: var(--color-aqua);
+    border-radius: 100%;
+    padding: 2px;
+    color: var(--color-blanco);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer {
     width: 100%;
