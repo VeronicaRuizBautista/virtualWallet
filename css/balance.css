@@ -15,6 +15,7 @@ body{
     height: 35vh;
     overflow: hidden;
     z-index: -10;
+    justify-content: center;
 }
 .fondo__puntos img {
     object-fit: contain;
