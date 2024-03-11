@@ -8,6 +8,12 @@
 body{
     background: var(--color-gris);
 }
+.banner{
+    position: absolute;
+}
+.banner img {
+    width: 100vw;
+}
 .header{
     width: 100%;
     padding: 0 .5em;
