@@ -8,9 +8,11 @@
     --color-negro: black;
     --color-orange:orange;
     --morado-oscuro:rgb(104, 4, 104);
-    --naranja-claro:rgb(255, 197, 149);
+    --naranja-claro:rgb(255, 216, 142);
     --color-plateado:rgb(207, 207, 207);
     --color-verde:rgb(1, 193, 1);
+    --color-prueba:#33404F;
+    --gdg:#680468;
 }
 @font-face {
     font-family: "SF-Pro-Text-Bold";
