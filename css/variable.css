@@ -5,6 +5,11 @@
     --color-aqua: #00DDA3;
     --color-beige: #B5C5C3;
     --celeste-claro:#E1FFEF;
+    --color-negro: black;
+    --color-orange:orange;
+    --morado-oscuro:rgb(104, 4, 104);
+    --naranja-claro:rgb(255, 197, 149);
+    --color-plateado:rgb(185, 185, 185);
 }
 @font-face {
     font-family: "SF-Pro-Text-Bold";
