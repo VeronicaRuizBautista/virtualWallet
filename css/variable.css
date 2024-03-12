@@ -9,7 +9,8 @@
     --color-orange:orange;
     --morado-oscuro:rgb(104, 4, 104);
     --naranja-claro:rgb(255, 197, 149);
-    --color-plateado:rgb(185, 185, 185);
+    --color-plateado:rgb(207, 207, 207);
+    --color-verde:rgb(1, 193, 1);
 }
 @font-face {
     font-family: "SF-Pro-Text-Bold";

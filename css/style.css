@@ -146,18 +146,8 @@ progress[value]::-moz-progress-bar {
     height: 100px;
 }
 
-.activities__transactions{
-    padding-top: 30px;
-}
-
-.activities__transactions img{
-    width: 40px;
-}
-
-
 .activities__transactions p{
     font-size: .5em;
-    color: var(--color-blanco);
 }
 .activities__transactions ul{
     height: 20vh;
@@ -172,18 +162,31 @@ progress[value]::-moz-progress-bar {
     justify-content: space-between;
     
 }
-
-.transactions__box1 , .transactions__box2{
-    display: flex;
+.transactions p{
+    font-weight: bold;
+    color: var(--color-verde);
 }
-
+.transactions__box{
+    display: flex;
+    text-transform:uppercase;
+    color: var(--color-negro);
+}
+.transactions__box p{
+    color: var(--color-negro);
+    text-transform: capitalize;
+}
+.transactions__box img {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
 .transactions__box2{
     flex-direction: column;
     align-items: flex-end;
 }
 .footer {
     width: 100%;
-    background: var(--color-gris);
+    background: var(--color-negro);
     position: fixed;
     bottom: 0;
 }
@@ -198,6 +201,10 @@ progress[value]::-moz-progress-bar {
     margin: .5em 0;
 }
 
-.footer ul li a img {
-    width: 2em;
+.footer ul li a i {
+    font-size: 2em;
+    color: var(--color-orange);
+}
+.footer .actual i {
+    box-shadow: 0 0 15px var(--color-orange);
 }
