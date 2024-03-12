@@ -23,6 +23,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    background-color: var(--morado-oscuro);
 }
 .header__logo{
     display: flex;
