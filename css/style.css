@@ -115,6 +115,7 @@ progress[value]::-moz-progress-bar {
     border-radius: 30px;
     padding-bottom: 3.5em;
     color: var(--color-negro);
+    box-shadow: 0 0 30px var(--color-orange);
 }
 
 .activities__buttons{
@@ -147,9 +148,11 @@ progress[value]::-moz-progress-bar {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    gap: 15px
+    gap: 5px
 }
 .activities__transactions li{
+    padding: 10px;
+    box-shadow: 0 0 5px var(--morado-transpa);
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
